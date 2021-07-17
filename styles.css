@@ -31,6 +31,33 @@ nav {
   z-index: 2;
 }
 
+.desktop-menu {
+  display: none;
+}
+
+.nav-links {
+  font-family: "Roboto", sans-serif;
+  margin-left: 10px;
+  color: black;
+
+  text-decoration: none;
+  margin: 13px 10px 13px 10px;
+}
+
+.contact:hover {
+  color: whitesmoke;
+  background-color: #40bcfc;
+}
+
+.contact {
+  text-transform: uppercase;
+  color: black;
+  background: rgb(255, 217, 0);
+  padding: 9px;
+  border-radius: 1000px;
+  font-family: "Roboto Slab", serif;
+}
+
 .image {
   width: 100%;
 }
@@ -177,6 +204,19 @@ p {
   margin-left: 10px;
 }
 
+.mobile-links {
+  display: none;
+}
+
+.menu-icon:focus + .mobile-links {
+  display: flex;
+  position: fixed;
+  right: 5px;
+  flex-direction: column;
+  background-color: whitesmoke;
+  border-radius: 10px;
+}
+
 @media (min-width: 768px) {
   /* desktop */
   .all-cards {
@@ -214,5 +254,22 @@ p {
   }
   .blue-image-card {
     background-image: url("images/desktop/image-photography.jpg");
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  .desktop-menu {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+  .contact {
+    background-color: whitesmoke;
+  }
+  .nav-links {
+    color: whitesmoke;
   }
 }
